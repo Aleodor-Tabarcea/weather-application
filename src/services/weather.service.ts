@@ -20,7 +20,7 @@ export class WeatherService {
 
     getWeather(coordinates: Coordinates){
         return this.http.get(
-            `${this.apiUrl}?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appId=${this.apiKey}`
+            `${this.apiUrl}?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appId=${this.apiKey}&units=metric`
         ).map((res:Response) => res.json());
     }
 }
