@@ -9,7 +9,9 @@ import 'rxjs/add/operator/map';
 
 export class WeatherService {
 
-    apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+    weatherApiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+    forecastApiUrl = 'https://api.openweathermap.org/data/2.5/forecast';
+    
     apiKey = 'dabff28558e69db4ee680303d2edc965'
 
     constructor (
@@ -20,7 +22,13 @@ export class WeatherService {
 
     getWeather(coordinates: Coordinates){
         return this.http.get(
-            `${this.apiUrl}?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appId=${this.apiKey}&units=metric`
+            `${this.weatherApiUrl}?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appId=${this.apiKey}&units=metric`
+        ).map((res:Response) => res.json());
+    }
+
+    getForecast(coordinates: Coordinates){
+         return this.http.get(
+            `${this.forecastApiUrl}?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appId=${this.apiKey}&units=metric`
         ).map((res:Response) => res.json());
     }
 }

@@ -10,3 +10,9 @@ Setup:
 2. cd in the project folder
 2. ionic serve
 
+TO DO:
+    - Refactor forecast for the next three days in a different class
+    - Review min and max algorithm for the forecast.
+    - Map icons to icon ID
+    - Style main page
+    - Switch color by day/night cycle
