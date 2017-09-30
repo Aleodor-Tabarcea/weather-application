@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "Weather App",
+  "short_name": "WAPP",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

@@ -1,4 +1,4 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a simple weather project with Ionic2.
 
 ## How to use this template
 
