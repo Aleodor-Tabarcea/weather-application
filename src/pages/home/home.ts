@@ -13,7 +13,7 @@ import { Weather } from '../../models/weather';
 
 export class HomePage implements AfterViewInit {
 
-  data:Weather;
+  data:Weather = new Weather('a', 'a', 'a', 'a', 1);
 
   arrayDaysForecast = {
     today : {
@@ -44,9 +44,9 @@ export class HomePage implements AfterViewInit {
             this.data = new Weather(
               response.name,
               response.sys.country,
-              response.main.temp,
               response.weather[0].icon,
-              response.weather[0].description
+              response.weather[0].description,
+              response.main.temp
             );
             console.log(this.data);
           });
