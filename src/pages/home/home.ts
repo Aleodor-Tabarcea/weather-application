@@ -30,7 +30,7 @@ export class HomePage implements AfterViewInit {
     }
   };
 
-  darkTheme = true;
+  darkTheme = false;
 
   dataRetrieved = 0;
 
