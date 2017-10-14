@@ -13,6 +13,6 @@ Setup:
 TO DO:
     - Refactor forecast for the next three days in a different class
     - Review min and max algorithm for the forecast.
-    - Map icons to icon ID
-    - Style main page
-    - Switch color by day/night cycle
+    - Map icons to icon ID - Done
+    - Style main page - Done
+    - Switch color by day/night cycle - Done

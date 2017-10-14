@@ -1,0 +1,71 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 14/10/2017 14:47
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-info:before { content: "\f100"; }
+.flaticon-mist:before { content: "\f101"; }
+.flaticon-clouds:before { content: "\f102"; }
+.flaticon-storm:before { content: "\f103"; }
+.flaticon-rain-2:before { content: "\f104"; }
+.flaticon-sun:before { content: "\f105"; }
+.flaticon-night-2:before { content: "\f106"; }
+.flaticon-rainy:before { content: "\f107"; }
+.flaticon-cloudy:before { content: "\f108"; }
+.flaticon-night:before { content: "\f109"; }
+.flaticon-rain-1:before { content: "\f10a"; }
+.flaticon-night-1:before { content: "\f10b"; }
+.flaticon-windy:before { content: "\f10c"; }
+.flaticon-cloud:before { content: "\f10d"; }
+.flaticon-rain:before { content: "\f10e"; }
+.flaticon-snowing:before { content: "\f10f"; }
+    
+    $font-Flaticon-info: "\f100";
+    $font-Flaticon-mist: "\f101";
+    $font-Flaticon-clouds: "\f102";
+    $font-Flaticon-storm: "\f103";
+    $font-Flaticon-rain-2: "\f104";
+    $font-Flaticon-sun: "\f105";
+    $font-Flaticon-night-2: "\f106";
+    $font-Flaticon-rainy: "\f107";
+    $font-Flaticon-cloudy: "\f108";
+    $font-Flaticon-night: "\f109";
+    $font-Flaticon-rain-1: "\f10a";
+    $font-Flaticon-night-1: "\f10b";
+    $font-Flaticon-windy: "\f10c";
+    $font-Flaticon-cloud: "\f10d";
+    $font-Flaticon-rain: "\f10e";
+    $font-Flaticon-snowing: "\f10f";

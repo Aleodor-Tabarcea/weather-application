@@ -4,5 +4,12 @@
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
+  },
+  "fonts":{
+    "src": [
+      "src/assets/external_scss/weather_font/*.ttf",
+      "src/assets/external_scss/weather_font/*.woff*"
+    ],
+    "dest": "www/build/fonts/"
   }
 }

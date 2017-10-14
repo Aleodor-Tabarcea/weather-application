@@ -1,8 +1,47 @@
-<ion-content>
+<ion-content [ngClass]="darkTheme === true ? 'dark-theme' : ''">
+  <i class="fi flaticon-info informationButton" (click)="infoDrawerHidden = !infoDrawerHidden" ></i>
   <div class="location">
     {{data.city}}, {{data.country}}
   </div>
-  <div class="icon">{{data.icon}}</div>
-  <div class="temperature">{{data.temperature}}</div>
-  <div class="conclusion">{{data.conclusion}}</div>
+  <div class="icon"><i class="fi {{data.icon}}"></i></div>
+  <div class="temperature">{{data.temperature}}&#176;</div>
+  <div class="conclusion">So, it's {{data.conclusion}}.</div>
+  <div class="forecast">
+    <div class="today">
+      <span class="day">{{daysStringName.today}}</span> <span class="minMax">{{arrayDaysForecast.today.max}}&#176;  {{arrayDaysForecast.today.min}}&#176; </span>
+    </div>
+    <div class="tomorrow">
+      <span class="day">{{daysStringName.tomorrow}}</span> <span class="minMax">{{arrayDaysForecast.tomorrow.max}}&#176;  {{arrayDaysForecast.tomorrow.min}}&#176; </span>
+    </div>
+    <div class="twoDays">
+      <span class="day">{{daysStringName.twoDays}}</span> <span class="minMax">{{arrayDaysForecast.twoDays.max}}&#176;  {{arrayDaysForecast.twoDays.min}}&#176; </span>
+    </div>
+  </div>
+  <div class="loader" [hidden]="(dataRetrieved == 2)">
+    <ion-spinner></ion-spinner>
+  </div>
+  <div class="information" [hidden]="infoDrawerHidden" (click)="infoDrawerHidden = !infoDrawerHidden">
+    <div class="content">
+        A simple weather app
+        <br>
+        <br>
+        Developers:
+        <ul>
+          <li><a href="https://github.com/Aleodor-Tabarcea">Aleodor Tabarcea</a></li>
+          <li><a href="https://github.com/pckltr">Vlad Rusanescu</a></li>
+        </ul>
+        <br>
+        <br>
+        Icons used from <a href="www.flaticon.com">flaticon.com</a>
+        <br>
+        Design credits:
+        <ul>
+          <li><a href="https://www.flaticon.com/authors/chanut-is-industries">Chanut is Industries</a></li>
+          <li><a href="https://www.flaticon.com/authors/vignesh-oviyan">Vignesh Oviyan</a></li>
+          <li><a href="https://www.flaticon.com/authors/eucalyp">Eucalypt</a></li>
+        </ul>
+        <br>
+        Tap anywhere to dismiss  
+    </div>  
+  </div>
 </ion-content>

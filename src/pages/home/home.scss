@@ -2,7 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 4rem;
+  overflow: hidden;
+}
+
+.content-ios.dark-theme{
+  background: #000000;
+  color: #FFFFFF;
+  .loader{
+    background: #000000;
+    color: #FFFFFF;
+  }
+  .information{
+    background: #000000;
+    color: #FFFFFF;
+  }
+  .informationButton{
+    color: #FFFFFF;
+  }
 }
 
 .location,
@@ -13,11 +31,73 @@
 }
 
 .conclusion {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
-.icon,
+.icon{
+  font-size: 10rem;
+}
+
 .temperature {
 	font-size: 6rem;
 }
 
+.forecast{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .today,
+  .tomorrow,
+  .twoDays{
+    display: flex;
+    flex-direction: row;
+    .day{
+      flex: 1;
+    }
+    .minMax{
+      flex: 1;
+      text-align: right;
+    }
+  }
+}
+
+.loader{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: #ffffff;
+  ion-spinner{
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.informationButton{
+  position: absolute;
+  top:20px;
+  right:20px;
+  color: #BABABA;
+}
+
+.information{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding: 40px;
+  font-size: 1.7rem;
+  background: #ffffff;
+  overflow:auto;
+  .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
